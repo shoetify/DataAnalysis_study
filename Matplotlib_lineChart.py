@@ -14,10 +14,6 @@ x = range(120)
 y_1 = [random.randint(20, 35) for i in range(120)]
 y_2 = [random.randint(20, 35) for i in range(120)]
 
-
-# 添加图例
-plt.legend()
-
 # 设置轴刻度（输入一个代表轴的数据的列表）
 # plt.xticks(range(0, 25))
 plt.yticks(range(min(y_1), max(y_1) + 1))
@@ -35,6 +31,13 @@ plt.title("Time-Temperature in 10am-12am")
 # 绘制网格
 plt.grid(alpha=0.4)
 # 设置透明度
+
+# 绘图
+plt.plot(x, y_1, label="Guangzhou", color="orange")
+plt.plot(x, y_2, label="Beijing", color="cyan")
+
+# 添加图例
+plt.legend()
 
 # 保存图片
 # plt.savefig("./t1.png")
