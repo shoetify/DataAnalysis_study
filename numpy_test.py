@@ -29,3 +29,9 @@ print(t5.dtype)
 t6 = np.array([3.145, 56.6343, 12.2314, 12.111])
 t7 = np.round(t6, 2)
 print(t7)
+
+# Numpy 数组的形状（维数）
+t8 = np.array([[2, 3, 4], [5, 6, 7]])
+print(t8)
+print(t8.shape)
+print(t8.reshape(6,))
