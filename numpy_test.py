@@ -1,4 +1,5 @@
 import numpy as np
+import pandas as pd
 
 # 创建数组
 t1 = np.array([3, 4, 5])
@@ -34,4 +35,13 @@ print(t7)
 t8 = np.array([[2, 3, 4], [5, 6, 7]])
 print(t8)
 print(t8.shape)
-print(t8.reshape(6,))
+print(t8.reshape(6, ))
+
+# 矩阵的转置
+t9 = np.arange(24).reshape((4, 6))
+print(t9)
+print(t9.transpose())
+
+
+df = pd.DataFrame()
+df.sort_values()
