@@ -24,4 +24,3 @@ china_data = df[df["Country"] == "CN"]
 grouped = china_data.groupby(by="State/Province").count()["Brand"]
 
 print(grouped)
-jb 
